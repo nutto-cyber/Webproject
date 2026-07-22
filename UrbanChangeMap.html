@@ -161,7 +161,9 @@
   .stat-tile .unit { display: block; font-size: 10px; font-weight: 400; color: var(--text-muted); margin-top: 1px; }
 
   /* ---- District table ---- */
-  .district-panel { width: 300px; max-height: 58vh; display: flex; flex-direction: column; }
+  /* max-height reserves fixed space for the top-right legend/stats panel so the
+     two independently-anchored corner panels never overlap on short viewports */
+  .district-panel { width: 300px; max-height: calc(100vh - 460px); display: flex; flex-direction: column; }
   .district-panel table { border-collapse: collapse; font-size: 12px; width: 100%; }
   .district-panel th {
     position: sticky; top: 0; background: var(--surface-1);
@@ -171,7 +173,7 @@
   }
   .district-panel th:first-child { text-align: left; }
   .district-panel th .dot { display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:4px; vertical-align:1px; }
-  .district-panel tbody { display: block; overflow-y: auto; max-height: 42vh; }
+  .district-panel tbody { display: block; overflow-y: auto; max-height: calc(100vh - 590px); }
   .district-panel thead, .district-panel tbody tr { display: table; width: 100%; table-layout: fixed; }
   .district-panel td {
     padding: 5px 6px; text-align: right;
@@ -396,7 +398,7 @@ function renderInfoPanel(mode) {
 
 /* ---- District table (bottom-right) ---- */
 const DistrictControl = L.Control.extend({
-  options: { position: "bottomleft" },
+  options: { position: "bottomright" },
   onAdd: function () {
     const div = L.DomUtil.create("div", "panel district-panel");
     const rows = RESULT.district_stats_km2
