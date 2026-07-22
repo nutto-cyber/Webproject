@@ -1,0 +1,267 @@
+{
+  "province": "Chiang Mai",
+  "aoi_bounds": [
+    98.01456380739785,
+    17.274874081399023,
+    99.57594930226234,
+    20.14622306017309
+  ],
+  "baseline_year": 2020,
+  "compare_years": [
+    2022,
+    2023,
+    2025
+  ],
+  "urban_threshold": 0.5,
+  "year_tile_urls": {
+    "2020": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/5122b3fda8ac7752d0925ccbcb324dee-83ef2df2e48a49244f22a31c35d5982e/tiles/{z}/{x}/{y}",
+    "2022": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/ce5478bae8d052359a7b11b02ea435ed-5295fe6db1c3efba661c8d0e8959e3e5/tiles/{z}/{x}/{y}",
+    "2023": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/282ea300580bfd28d28ae49a17592cee-1b6cf1e5772717d36da4cce46a993619/tiles/{z}/{x}/{y}",
+    "2025": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/457ad158b48ff8ee0e43d0785ce1d104-238006090ebfc1c1443c0c5ed416841d/tiles/{z}/{x}/{y}"
+  },
+  "pair_data": {
+    "2020_2022": {
+      "tile_urls": {
+        "new_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/7785069a37509af20d37a8fa652ce37d-1e0d93f728c528a79979e62eeba53350/tiles/{z}/{x}/{y}",
+        "unchanged_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/32fa73d60769910ce9d750e79f066da7-ba3804e823b8c7c8e2f08a63c903a061/tiles/{z}/{x}/{y}",
+        "lost_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/3c2744ae23fc3857884f4993a8c0ae0a-0f6d2f68d16faf944ff6b835c5541dda/tiles/{z}/{x}/{y}"
+      },
+      "stats_km2": {
+        "new_urban": 139.12,
+        "unchanged_urban": 585.9,
+        "lost_urban": 20.3,
+        "non_urban": 21444.86
+      }
+    },
+    "2020_2023": {
+      "tile_urls": {
+        "new_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/4f21e871364c04243755a8a26853442e-5ff8818610f80f41e37729688ed9c68e/tiles/{z}/{x}/{y}",
+        "unchanged_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/b5404011724b2ef6055eace7f3d63316-21105d5e04feef85fdc89e6d33b8d73f/tiles/{z}/{x}/{y}",
+        "lost_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/285822c5a626f2a85a5e60a4526a103e-178dd1c803456dcadd9cbbea676b32d2/tiles/{z}/{x}/{y}"
+      },
+      "stats_km2": {
+        "new_urban": 74.73,
+        "unchanged_urban": 548.63,
+        "lost_urban": 57.57,
+        "non_urban": 21509.25
+      }
+    },
+    "2020_2025": {
+      "tile_urls": {
+        "new_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/d5e013a66c22e1a19241dc140b3e014d-f7be3c29421120b27fe22df7656611f4/tiles/{z}/{x}/{y}",
+        "unchanged_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/45c723d7c7da4a5e34488513fe3ce8c1-75ff31296248c596b8aaf41408fbfc82/tiles/{z}/{x}/{y}",
+        "lost_urban": "https://earthengine.googleapis.com/v1/projects/peak-plasma-485606-u1/maps/5a8409ebe849d3fca95346fa7c8fdaa7-005ad6358caef1f4823a982b91181f7f/tiles/{z}/{x}/{y}"
+      },
+      "stats_km2": {
+        "new_urban": 160.42,
+        "unchanged_urban": 571.47,
+        "lost_urban": 34.73,
+        "non_urban": 21423.55
+      }
+    }
+  },
+  "district_stats_km2": [
+    {
+      "district": "San Sai",
+      "non_urban": 272.63,
+      "new_urban": 20.96,
+      "unchanged_urban": 55.85,
+      "lost_urban": 1.31,
+      "lon": 99.03554204178664,
+      "lat": 18.95093673926652
+    },
+    {
+      "district": "Mae Rim",
+      "non_urban": 404.95,
+      "new_urban": 13.59,
+      "unchanged_urban": 30.21,
+      "lost_urban": 1.33,
+      "lon": 98.87760003412744,
+      "lat": 18.9401015427179
+    },
+    {
+      "district": "Doi Saket",
+      "non_urban": 611.83,
+      "new_urban": 11.99,
+      "unchanged_urban": 22.34,
+      "lost_urban": 0.78,
+      "lon": 99.22221303913521,
+      "lat": 18.937183386180322
+    },
+    {
+      "district": "San Kamphaeng",
+      "non_urban": 657.4,
+      "new_urban": 11.96,
+      "unchanged_urban": 38.75,
+      "lost_urban": 1.6,
+      "lon": 99.25651189522912,
+      "lat": 18.736490433481187
+    },
+    {
+      "district": "Mae Taeng",
+      "non_urban": 1380.3,
+      "new_urban": 9.98,
+      "unchanged_urban": 19.91,
+      "lost_urban": 1.03,
+      "lon": 98.8549875590548,
+      "lat": 19.17732573498649
+    },
+    {
+      "district": "Saraphi",
+      "non_urban": 58.34,
+      "new_urban": 9.8,
+      "unchanged_urban": 40.4,
+      "lost_urban": 1.25,
+      "lon": 99.02223097988644,
+      "lat": 18.694955253850438
+    },
+    {
+      "district": "Fang",
+      "non_urban": 812.97,
+      "new_urban": 9.7,
+      "unchanged_urban": 32.9,
+      "lost_urban": 1.1,
+      "lon": 99.16602439093872,
+      "lat": 19.884197970361004
+    },
+    {
+      "district": "Chiang Dao",
+      "non_urban": 2148.57,
+      "new_urban": 9.65,
+      "unchanged_urban": 20.74,
+      "lost_urban": 0.82,
+      "lon": 98.90481608810038,
+      "lat": 19.507428151070414
+    },
+    {
+      "district": "Muang Chiang Mai",
+      "non_urban": 81.78,
+      "new_urban": 9.0,
+      "unchanged_urban": 82.26,
+      "lost_urban": 1.62,
+      "lon": 98.97035532508762,
+      "lat": 18.792025438116124
+    },
+    {
+      "district": "Hang Dong",
+      "non_urban": 222.08,
+      "new_urban": 8.68,
+      "unchanged_urban": 40.64,
+      "lost_urban": 2.1,
+      "lon": 98.8861011115771,
+      "lat": 18.734878714208715
+    },
+    {
+      "district": "Chom Thong",
+      "non_urban": 1273.28,
+      "new_urban": 7.23,
+      "unchanged_urban": 39.73,
+      "lost_urban": 5.69,
+      "lon": 98.63540774439058,
+      "lat": 18.397641128546898
+    },
+    {
+      "district": "Mae Ai",
+      "non_urban": 792.69,
+      "new_urban": 6.33,
+      "unchanged_urban": 17.6,
+      "lost_urban": 0.45,
+      "lon": 99.34128543477715,
+      "lat": 20.000027810995626
+    },
+    {
+      "district": "San Pa Tong",
+      "non_urban": 133.52,
+      "new_urban": 6.09,
+      "unchanged_urban": 35.16,
+      "lost_urban": 3.1,
+      "lon": 98.87975666218485,
+      "lat": 18.60380481416428
+    },
+    {
+      "district": "Chai Prakan",
+      "non_urban": 491.48,
+      "new_urban": 4.28,
+      "unchanged_urban": 14.93,
+      "lost_urban": 0.69,
+      "lon": 99.17629126611097,
+      "lat": 19.677999749553752
+    },
+    {
+      "district": "Mae Chaem",
+      "non_urban": 3327.12,
+      "new_urban": 3.9,
+      "unchanged_urban": 10.86,
+      "lost_urban": 2.49,
+      "lon": 98.31182557377409,
+      "lat": 18.663102178810192
+    },
+    {
+      "district": "Phrao",
+      "non_urban": 1262.33,
+      "new_urban": 3.79,
+      "unchanged_urban": 18.14,
+      "lost_urban": 1.17,
+      "lon": 99.22176772400735,
+      "lat": 19.289212998791047
+    },
+    {
+      "district": "Mae Wang",
+      "non_urban": 635.17,
+      "new_urban": 3.25,
+      "unchanged_urban": 12.3,
+      "lost_urban": 1.47,
+      "lon": 98.66018913129336,
+      "lat": 18.67039197719952
+    },
+    {
+      "district": "Omkoi",
+      "non_urban": 2743.53,
+      "new_urban": 3.2,
+      "unchanged_urban": 5.25,
+      "lost_urban": 1.57,
+      "lon": 98.3363656663336,
+      "lat": 17.683051083792872
+    },
+    {
+      "district": "Samoeng",
+      "non_urban": 1014.98,
+      "new_urban": 2.24,
+      "unchanged_urban": 4.16,
+      "lost_urban": 0.73,
+      "lon": 98.63665163420927,
+      "lat": 18.910483152715283
+    },
+    {
+      "district": "Hot",
+      "non_urban": 1434.45,
+      "new_urban": 2.01,
+      "unchanged_urban": 12.5,
+      "lost_urban": 2.36,
+      "lon": 98.47964857394287,
+      "lat": 18.11560228295108
+    },
+    {
+      "district": "Wiang Haeng",
+      "non_urban": 710.19,
+      "new_urban": 1.62,
+      "unchanged_urban": 7.84,
+      "lost_urban": 0.54,
+      "lon": 98.65603893958578,
+      "lat": 19.590128091534318
+    },
+    {
+      "district": "Doi Tao",
+      "non_urban": 953.88,
+      "new_urban": 1.18,
+      "unchanged_urban": 9.01,
+      "lost_urban": 1.5,
+      "lon": 98.66027489531292,
+      "lat": 17.89833146265418
+    }
+  ],
+  "district_baseline": {
+    "year_before": 2020,
+    "year_after": 2025
+  }
+}
