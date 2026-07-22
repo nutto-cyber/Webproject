@@ -260,13 +260,8 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
 });
 
 /* ---- Map ---- */
-const bounds = L.latLngBounds(
-  [RESULT.aoi_bounds[1], RESULT.aoi_bounds[0]],
-  [RESULT.aoi_bounds[3], RESULT.aoi_bounds[2]]
-);
-
 const map = L.map("map", { zoomControl: true });
-map.fitBounds(bounds);
+map.setView([18.85, 98.98], 11); // urban core (Chiang Mai city + San Sai / Mae Rim / Doi Saket)
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap contributors",
